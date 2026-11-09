@@ -123,7 +123,7 @@ export const pawcare = {
     "A team-built community platform (4 members) that connects people who report stray or injured animals with volunteers, shelters and adopters.",
   teamSize: 4,
   myRole:
-    "Testing and quality assurance: I tested the app end to end to find structural errors and functional flaws, reported them to the team, and worked on the frontend design.",
+    "Testing and quality assurance: I tested the app end to end to find structural errors and functional flaws, including a security gap where new accounts were never verified, so the app could not tell legitimate users from fake ones. I reported issues to the team and worked on the frontend design.",
   stack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Leaflet"],
   repo: "https://github.com/shobhitguptacs/pawcare",
   live: "https://pawcare-v9rzfscq.manus.space",
