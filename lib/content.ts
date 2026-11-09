@@ -143,8 +143,8 @@ export const otherProjects = [
   {
     name: "Facial Emotion Recognition",
     description:
-      "A computer vision application that detects faces and classifies their emotions in real time.",
-    tags: ["Python", "Machine learning", "Computer vision"],
+      "A real-time webcam system where a Keras CNN classifies 7 facial emotions, compared live against DeepFace, with age and gender estimation and face login protected by blink-based liveness detection.",
+    tags: ["Python", "OpenCV", "TensorFlow", "DeepFace", "dlib"],
   },
   {
     name: "Exam Seating Arrangement System",
