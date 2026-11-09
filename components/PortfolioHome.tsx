@@ -15,6 +15,8 @@ import { Navigation } from "@/components/Navigation";
 import { Reveal } from "@/components/Reveal";
 import {
   bioauth,
+  certifications,
+  certificationsFolder,
   leetcodeStats,
   otherProjects,
   pawcare,
@@ -101,7 +103,9 @@ export function PortfolioHome() {
               <article className="hero-card">
                 <div className="card-kicker">
                   <span>Featured build</span>
-                  <span className="card-index">01 / {2 + otherProjects.length}</span>
+                  <span className="card-index">
+                    01 / {2 + otherProjects.length}
+                  </span>
                 </div>
                 <h2 className="display-font">{bioauth.name}</h2>
                 <p>{bioauth.subtitle}</p>
@@ -207,8 +211,8 @@ export function PortfolioHome() {
               Login without passwords, built end to end.
             </h2>
             <p className="section-intro">
-              BioAuth is my main project: I designed and built the frontend,
-              the backend, the biometric pipeline and the tests.
+              BioAuth is my main project: I designed and built the frontend, the
+              backend, the biometric pipeline and the tests.
             </p>
           </Reveal>
 
@@ -243,8 +247,8 @@ export function PortfolioHome() {
                 </span>
                 <p className="project-side-number display-font">03</p>
                 <p className="project-side-copy">
-                  Face match, voice match and a spoken secret phrase, behind
-                  49 API endpoints.
+                  Face match, voice match and a spoken secret phrase, behind 49
+                  API endpoints.
                 </p>
               </div>
               <div className="project-side-footer">
@@ -455,8 +459,7 @@ export function PortfolioHome() {
                     </div>
                     <div className="legend-item">
                       <span className="legend-key">
-                        <span className="legend-dot legend-dot-medium" />{" "}
-                        Medium
+                        <span className="legend-dot legend-dot-medium" /> Medium
                       </span>
                       <strong>{leetcodeStats.medium}</strong>
                     </div>
@@ -476,6 +479,49 @@ export function PortfolioHome() {
             </div>
           </section>
         )}
+
+        <section
+          aria-labelledby="certs-title"
+          className="section section-rule wrap"
+          id="certifications"
+        >
+          <Reveal>
+            <p className="eyebrow">{num()} — Certifications</p>
+            <h2 className="section-heading display-font" id="certs-title">
+              Courses I’ve completed.
+            </h2>
+          </Reveal>
+          <div className="repo-list">
+            {certifications.map((cert) => (
+              <article className="repo-card" key={cert.name}>
+                <div>
+                  <div className="repo-card-top">
+                    <h3>{cert.name}</h3>
+                    <ExternalIconLink
+                      className="repo-language"
+                      href={cert.file}
+                    >
+                      <ExternalLink aria-hidden="true" size={13} /> View
+                    </ExternalIconLink>
+                  </div>
+                  <p>{cert.issuer}</p>
+                </div>
+                <div className="repo-card-bottom">
+                  <span className="repo-language">{cert.date}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="hero-actions">
+            <ExternalIconLink
+              className="button-secondary"
+              href={certificationsFolder}
+            >
+              All certificates on GitHub{" "}
+              <ArrowUpRight aria-hidden="true" size={14} />
+            </ExternalIconLink>
+          </div>
+        </section>
 
         <section
           aria-labelledby="contact-title"
@@ -524,7 +570,9 @@ export function PortfolioHome() {
               Built to be verified<span className="brand-dot">.</span>
             </span>
           </a>
-          <span>© {new Date().getFullYear()} {profile.name}</span>
+          <span>
+            © {new Date().getFullYear()} {profile.name}
+          </span>
           <nav aria-label="Footer links" className="footer-social">
             <ExternalIconLink href={profile.github}>
               GitHub <ArrowUpRight aria-hidden="true" size={12} />

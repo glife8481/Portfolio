@@ -9,6 +9,7 @@ const links = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Work", href: "#projects" },
+  { label: "Certificates", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -38,16 +39,13 @@ export function Navigation() {
   return (
     <header className="site-header">
       <div className="site-nav wrap">
-        <a
-          aria-label={`${profile.name} home`}
-          className="brand"
-          href="#top"
-        >
+        <a aria-label={`${profile.name} home`} className="brand" href="#top">
           <span aria-hidden="true" className="brand-mark">
             {profile.initials}
           </span>
           <span className="brand-name">
-            {profile.name}<span className="brand-dot">.</span>
+            {profile.name}
+            <span className="brand-dot">.</span>
           </span>
         </a>
 

@@ -153,3 +153,27 @@ export const otherProjects = [
     tags: ["Scheduling", "Allocation logic"],
   },
 ];
+
+export const certificationsFolder =
+  "https://github.com/glife8481/Portfolio/tree/main/public/certificates";
+
+export const certifications = [
+  {
+    name: "Artificial Intelligence",
+    issuer: "Infosys Springboard",
+    date: "Aug 2026",
+    file: "/certificates/Infosys-Springboard-Artificial-Intelligence.pdf",
+  },
+  {
+    name: "Cyber Security Foundation",
+    issuer: "Infosys Springboard",
+    date: "Aug 2026",
+    file: "/certificates/Infosys-Springboard-Cyber-Security-Foundation.pdf",
+  },
+  {
+    name: "Digital Productivity with AI · score 100%",
+    issuer: "UNICEF YuWaah · Passport to Earning",
+    date: "Aug 2026",
+    file: "/certificates/UNICEF-YuWaah-Digital-Productivity-with-AI.pdf",
+  },
+];
