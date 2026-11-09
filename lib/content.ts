@@ -21,7 +21,7 @@ export const profile = {
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["Python", "Java", "TypeScript", "JavaScript", "HTML", "CSS"],
+    items: ["Python", "Java", "C", "TypeScript", "JavaScript", "HTML", "CSS"],
   },
   { title: "Frontend", items: ["React", "Vite", "Tailwind CSS"] },
   { title: "Backend", items: ["FastAPI", "Pydantic", "REST APIs", "SQLite"] },
@@ -46,7 +46,7 @@ export const skillGroups = [
   },
   {
     title: "Fundamentals",
-    items: ["Data structures", "Object-oriented programming"],
+    items: ["Data structures in C", "Object-oriented programming"],
   },
 ];
 
