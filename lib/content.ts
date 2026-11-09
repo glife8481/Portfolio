@@ -143,7 +143,7 @@ export const otherProjects = [
   {
     name: "Facial Emotion Recognition",
     description:
-      "A real-time webcam system where a Keras CNN classifies 7 facial emotions, compared live against DeepFace, with age and gender estimation and face login protected by blink-based liveness detection.",
+      "I trained a Keras CNN that classifies 7 facial emotions and built a real-time webcam system around it, compared live against DeepFace, with age and gender estimation and face login protected by blink-based liveness detection.",
     tags: ["Python", "OpenCV", "TensorFlow", "DeepFace", "dlib"],
   },
   {
