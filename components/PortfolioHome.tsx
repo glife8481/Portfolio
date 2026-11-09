@@ -398,6 +398,14 @@ export function PortfolioHome() {
                 <div>
                   <div className="repo-card-top">
                     <h3>{project.name}</h3>
+                    {"link" in project && project.link && (
+                      <ExternalIconLink
+                        className="repo-language"
+                        href={project.link}
+                      >
+                        <ExternalLink aria-hidden="true" size={13} /> Source
+                      </ExternalIconLink>
+                    )}
                   </div>
                   <p>{project.description}</p>
                 </div>

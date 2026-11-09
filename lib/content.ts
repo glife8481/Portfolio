@@ -152,6 +152,20 @@ export const otherProjects = [
       "A tool that handles exam scheduling and generates seating arrangements automatically.",
     tags: ["Scheduling", "Allocation logic"],
   },
+  {
+    name: "Data Structures in C",
+    description:
+      "Coursework, updated as classes progress: stack, linear, circular and priority queues, a deque, and infix-to-postfix conversion.",
+    tags: ["C", "Data structures", "Coursework"],
+    link: "https://github.com/glife8481/data-structures-in-c",
+  },
+  {
+    name: "Object-Oriented Programming in Java",
+    description:
+      "Coursework, updated as classes progress: classes, inheritance, abstract classes, polymorphism and custom exceptions across 9 programs.",
+    tags: ["Java", "OOP", "Coursework"],
+    link: "https://github.com/glife8481/OOP",
+  },
 ];
 
 export const certificationsFolder =
