@@ -135,16 +135,16 @@ export const pawcare = {
 
 export const otherProjects = [
   {
+    name: "House Price Prediction",
+    description:
+      "Cleaned 13,320 Bengaluru listings and compared 7 models with 5-fold cross-validation. A tuned Gradient Boosting model reaches 15.6% median error on a held-out test set (baseline 39.9%), served through a FastAPI service and a Streamlit app with GenAI explanations. 143 tests, Docker. AIML skill lab (HCL).",
+    tags: ["Python", "scikit-learn", "XGBoost", "FastAPI", "Streamlit"],
+  },
+  {
     name: "Facial Emotion Recognition",
     description:
       "A computer vision application that detects faces and classifies their emotions in real time.",
     tags: ["Python", "Machine learning", "Computer vision"],
-  },
-  {
-    name: "House Price Prediction",
-    description:
-      "Collecting, cleaning and analysing real estate data, with visualisations of what drives prices, as the base for a prediction model. In progress.",
-    tags: ["Python", "Data analysis", "Visualisation"],
   },
   {
     name: "Exam Seating Arrangement System",
