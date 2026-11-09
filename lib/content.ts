@@ -63,9 +63,9 @@ export const bioauth = {
   name: "BioAuth",
   subtitle: "Face and voice biometric passwordless login",
   description:
-    "A full-stack login system where every sign-in must pass three checks: a face match, a voice match and a spoken secret phrase.",
+    "A full-stack multi-factor login system where every sign-in must pass a face match, a voice match and a spoken secret phrase.",
   problem:
-    "Each biometric alone has a weakness: a photo can target a face check and a recording can target a voice check. BioAuth makes an attacker beat a face match, a speaker match and a secret phrase in the same login.",
+    "Each biometric alone has a weakness: a photo can target a face check and a recording can target a voice check. BioAuth uses multi-factor authentication, so an attacker must beat a face match, a speaker match and a secret phrase in the same login.",
   features: [
     "Face verification with InsightFace embeddings across several camera frames, with image quality and distinct-frame checks.",
     "Voice verification with SpeechBrain ECAPA speaker embeddings, and the secret phrase transcribed with faster-whisper and fuzzy-matched.",

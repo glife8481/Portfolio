@@ -243,9 +243,9 @@ export function PortfolioHome() {
             <Reveal className="project-side" delay={0.1}>
               <div>
                 <span className="project-side-label">
-                  Checks every login must pass
+                  Multi-factor login
                 </span>
-                <p className="project-side-number display-font">03</p>
+                <p className="project-side-number display-font">MFA</p>
                 <p className="project-side-copy">
                   Face match, voice match and a spoken secret phrase, behind 49
                   API endpoints.
@@ -264,7 +264,7 @@ export function PortfolioHome() {
                 <div>
                   <p className="eyebrow">Case study · BioAuth</p>
                   <h3 className="display-font">
-                    One login, three things an attacker has to fake at once.
+                    One multi-factor login an attacker has to fake all at once.
                   </h3>
                 </div>
                 <p>{bioauth.problem}</p>
